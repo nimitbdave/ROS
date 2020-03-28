@@ -1,3 +1,33 @@
 // Fetch an Item
 
 // 22 programs running on 4 computers.  Now considered relatively simple.
+
+audio_mic -> sphinx_transcribe (1) -> fetch_item_director (1) -> voronoi (1) ;            -> navgui (1) ;                         -> voronoi (1) ;
+                                                                                                                                  -> localize (3) .  
+                                                                                             pathdrive (3) .                      -> joynav (3) ;                   -> movecom_mux (3) ;
+                                                                                                                                                                       local_planner (3) .
+                                                                                                                                     fetch_item_director (1) ;
+                                                                 localize (3) ;           -> navgui (1) ; navgui (1) ;
+                                                                                             pathdrive (3) ;
+                                                                                             fetch_item_director (1) .
+                                                                 movecom_mux (3) ;        -> segway (3) .                         -> local_planner (3) ;
+                                                                                                                                     deadreckon (3) ;
+                                                                                                                                     localize (3) ; 
+                                                                                                                                     navgui (1) .
+                                                                 ptz_searcher (1) ;       -> fetch_item_director (1) ;
+                                                                                             deadreckon (3) ;
+                                                                                             bumblebee (2) ;
+                                                                                             katana37 (2) ;
+                                                                                             ptz_camera (2) ; ptz_camera (2) ;
+                                                                                             lts_festival (3) .
+                                                                 lts_festival (3) .       
+
+
+map (1) -> navgui (1) ; navgui (1) ;
+           localize (3) ; localize (3) ;
+           voronoi (1); voronoi (1) .
+           
+laser_lms200 (3)                    -> localplanner (3) ;     -> movecom_mux (3) .
+                                       localize (3) .
+                            
+                                                      
