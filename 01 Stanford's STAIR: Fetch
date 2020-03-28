@@ -1,6 +1,6 @@
 // Fetch an Item
 
-// 22 programs running on 4 computers.  Now considered relatively simple.
+// 22 programs running on 4 computers.  
 
 audio_mic -> sphinx_transcribe (1) -> fetch_item_director (1) -> voronoi (1) ;            -> navgui (1) ;                         -> voronoi (1) ;
                                                                                                                                   -> localize (3) .  
