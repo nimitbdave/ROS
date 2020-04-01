@@ -51,4 +51,23 @@ node.
 
 You’re now running your first ROS system.  3.01 is sending messages to 3.02.  
 
+OPTIONS FROM HERE: 
+Visualize system:  rqt_graph, which will attempt to draw the publishers and subscribers in a logical manner.
+Publish messages to topic from command line, rostopic pub:
+
+  user@hostname$ rostopic pub counter std_msgs/Int32 1000000
+ 
+Verify things are way we expect them to be, rostopic info:
+
+  user@hostname$ rostopic info counter
+  Type: std_msgs/Int32
+  
+  Publishers:
+  * /topic_publisher (http://hostname:46674/)
+  
+  Subscribers:
+  * /topic_subscriber (http://hostname:53744/)
+  
+This summarizes basic topics.  Now can move onto Latched Topics.  
+
 """
