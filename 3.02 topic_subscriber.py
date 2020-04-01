@@ -31,3 +31,24 @@ rospy.spin()                                            # Once the subscription 
                                                         # This is just a useful shortcut to avoid having to define a while loop 
                                                         # like we did in 3.01; 
                                                         # ROS does not necessarily need to “take over” the main thread of execution.
+            
+"""
+Checking That Everything Works as Expected
+
+1: Make sure publisher node is still running.  (It is still publishing messages on the 'counter' topic.)
+2: In another terminal, start up the subscriber node:  
+
+user@hostname$ rosrun basics topic_subscriber.py
+355
+356
+357
+358
+359
+360
+
+It should start to print out integers published to the counter topic by the publisher
+node. 
+
+You’re now running your first ROS system.  3.01 is sending messages to 3.02.  
+
+"""
