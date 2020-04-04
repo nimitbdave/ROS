@@ -1,0 +1,22 @@
+The rosmsg command lets you look at the contents of a message type:
+
+user@hostname$ rosmsg show Complex
+[basics/Complex]:
+float32 real
+float32 imaginary
+
+-
+
+If a message contains other messages, they are displayed recursively by rosmsg. For
+example, PointStamped has a Header and a Point, each of which is a ROS type:
+
+user@hostname$ rosmsg show PointStamped
+[geometry_msgs/PointStamped]:
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+geometry_msgs/Point point
+  float64 x
+  float64 y
+  float64 z
