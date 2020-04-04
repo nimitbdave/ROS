@@ -1,4 +1,4 @@
-The rosmsg command lets you look at the contents of a message type:
+The "rosmsg" COMMAND lets you look at the contents of a message type:
 
 user@hostname$ rosmsg show Complex
 [basics/Complex]:
@@ -20,3 +20,7 @@ geometry_msgs/Point point
   float64 x
   float64 y
   float64 z
+
+- 
+
+"rosmsg list" COMMAND will show all of the messages available in ROS.
