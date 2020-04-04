@@ -1,0 +1,32 @@
+"rosmsg packages" will list all of the packages that define messages. 
+
+"rosmsg package" will list the messages defined in a particular package:
+
+user@hostname$ rosmsg package basics
+basics/Complex
+user@hostname$ rosmsg package sensor_msgs
+sensor_msgs/CameraInfo
+sensor_msgs/ChannelFloat32
+sensor_msgs/CompressedImage
+sensor_msgs/FluidPressure
+sensor_msgs/Illuminance
+sensor_msgs/Image
+sensor_msgs/Imu
+sensor_msgs/JointState
+sensor_msgs/Joy
+sensor_msgs/JoyFeedback
+sensor_msgs/JoyFeedbackArray
+sensor_msgs/LaserEcho
+sensor_msgs/LaserScan
+sensor_msgs/MagneticField
+sensor_msgs/MultiEchoLaserScan
+sensor_msgs/NavSatFix
+sensor_msgs/NavSatStatus
+sensor_msgs/PointCloud
+sensor_msgs/PointCloud2
+sensor_msgs/PointField
+sensor_msgs/Range
+sensor_msgs/RegionOfInterest
+sensor_msgs/RelativeHumidity
+sensor_msgs/Temperature
+sensor_msgs/TimeReference
