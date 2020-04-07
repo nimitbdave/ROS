@@ -46,3 +46,19 @@ print('Time elapsed: %f'%(client.get_result().time_elapsed.to_sec()))     # Afte
                                                                           # from within the client object and 
                                                                           # print out the time_elapsed field that was
                                                                           # reported by the server:
+
+ 
+"""
+Checking That Everything Works as Expected
+
+Now that we have implemented the action client, we can get to work. Make sure that
+your roscore and action server are still running, then run the action client:
+
+  user@hostname$ rosrun basics simple_action_client.py
+  Time elapsed: 5.001044
+
+Between the invocation of the client and the printing of the result data, you should
+see a delay of approximately five seconds, as requested. The time elapsed should be
+slightly more than five seconds, because a call to time.sleep() will usually take a little
+longer than requested.
+"""
