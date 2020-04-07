@@ -40,8 +40,9 @@ client.send_goal(goal)                                                    # Then
 
 client.wait_for_result()                                                  # Next, we wait for a result from the server. 
                                                                           # If things are working properly, we expect to
-                                                                          # block here for about five seconds. After the result comes in, 
+                                                                          # block here for about five seconds. 
+print('Time elapsed: %f'%(client.get_result().time_elapsed.to_sec()))     # After the result comes in, 
                                                                           # we use get_result() to retrieve it 
                                                                           # from within the client object and 
-print('Time elapsed: %f'%(client.get_result().time_elapsed.to_sec()))     # print out the time_elapsed field that was
+                                                                          # print out the time_elapsed field that was
                                                                           # reported by the server:
